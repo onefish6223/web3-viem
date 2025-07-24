@@ -34,7 +34,7 @@ export function BuyNFTButton({ listingId, price }: BuyNFTButtonProps) {
   // 检查授权状态
   const checkApproval = () => {
     refetchAllowanceamt();
-    alert("allowanceamt: " + allowanceamt + ", price: " + price);
+    // alert("allowanceamt: " + allowanceamt + ", price: " + price);
     // 直接断言为 bigint 类型
     const allowanceBigInt = allowanceamt as unknown as bigint;
     // 然后进行比较
